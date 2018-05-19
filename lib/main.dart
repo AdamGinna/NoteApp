@@ -93,7 +93,50 @@ class SecondScreen extends StatelessWidget
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('App Name'),
+        title: new TextFormField(initialValue: 'App Name'
+            ,
+           style: TextStyle(
+             fontSize: 25.0,
+             fontStyle: FontStyle.normal,
+             fontWeight: FontWeight.bold
+           ),
+          textAlign: TextAlign.center,
+        ),
+      ),
+      drawer: new Drawer(
+
+        child: Column(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: new Text("Adam"),
+              accountEmail: new Text("Adam.Ginna.work@gmail.com"),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: const Color(0xFF009688),
+                child: new Text("A",
+                  style: TextStyle(
+                    fontSize: 40.0,
+                  ),
+                ),
+              ),
+            ),
+            /*
+            ListView.builder(
+            itemCount: 10,
+            
+            itemBuilder: (BuildContext context, int index) {
+              return
+                new ListTile(
+                    title: new Text("Notka " + index.toString())
+
+                );
+            }
+               )
+               */
+            
+          ],
+
+
+        ),
       ),
       body:
           new Padding(
