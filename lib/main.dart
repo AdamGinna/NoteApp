@@ -119,19 +119,6 @@ class SecondScreen extends StatelessWidget
                 ),
               ),
             ),
-            /*
-            ListView.builder(
-            itemCount: 10,
-            
-            itemBuilder: (BuildContext context, int index) {
-              return
-                new ListTile(
-                    title: new Text("Notka " + index.toString())
-
-                );
-            }
-               )
-               */
             
           ],
 
@@ -140,16 +127,16 @@ class SecondScreen extends StatelessWidget
       ),
       body:
           new Padding(
-            padding: new EdgeInsets.only(bottom: 24.0),
+            padding: new EdgeInsets.only(bottom: 24.0,left: 4.2),
 
        child: new TextFormField(
          maxLines: 1000000,
          autofocus: true,
          autovalidate: false,
          initialValue: "działa",
-       style: new TextStyle(fontSize:17.0,
+       style: new TextStyle(fontSize:20.0,
            color: const Color(0xFF000000),
-           fontWeight: FontWeight.w300,
+           fontWeight: FontWeight.w400,
            fontFamily: "Roboto")
       )
           ),
